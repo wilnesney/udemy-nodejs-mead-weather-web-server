@@ -26,22 +26,22 @@ app.use(express.static(publicDirectoryPath));
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Landing Page',
-        name: 'G.G. Russey',
+        name: 'Dave Turka',
     })
 });
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
-        name: 'G.G. Russey',
+        name: 'Dave Turka',
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        helpText: "Here's an explanation of how to do things and stuff.",
-        name: 'G.G. Russey'
+        helpText: "Use the search box on the main page to search for weather information.",
+        name: 'Dave Turka'
     })
 })
 
@@ -81,7 +81,7 @@ app.get('/help/*', (req, res) => {
     res.render('404', {
         title: 'Oh, no!',
         errorText: 'Help article not found.',
-        name: 'G.G. Russey',
+        name: 'Dave Turka',
     })
 })
 
@@ -89,7 +89,7 @@ app.get('*', (req, res) => {
     res.render('404', {
         title: 'Oh, no!',
         errorText: 'Page not found.',
-        name: 'G.G. Russey',
+        name: 'Dave Turka',
     })
 })
 
